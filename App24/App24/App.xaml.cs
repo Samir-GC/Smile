@@ -19,7 +19,7 @@ namespace App24
 
 		protected override void OnStart ()
 		{
-            AppCenter.Start("android=93babaf5-e2da-4bf8-8a81-1ded94c1125d;" + "uwp={Your UWP App secret here};" + "ios={Your iOS App secret here}", typeof(Analytics), typeof(Crashes));
+            AppCenter.Start("android=27168a64-a862-42d8-b778-ea4180d1adf7;" + "uwp={Your UWP App secret here};" + "ios={Your iOS App secret here}", typeof(Analytics), typeof(Crashes));
         }
 
 		protected override void OnSleep ()
