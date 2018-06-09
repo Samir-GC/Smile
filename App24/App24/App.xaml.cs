@@ -1,6 +1,9 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace App24
@@ -16,8 +19,8 @@ namespace App24
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            AppCenter.Start("android=93babaf5-e2da-4bf8-8a81-1ded94c1125d;" + "uwp={Your UWP App secret here};" + "ios={Your iOS App secret here}", typeof(Analytics), typeof(Crashes));
+        }
 
 		protected override void OnSleep ()
 		{
